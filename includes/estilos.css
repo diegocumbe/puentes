@@ -1,0 +1,90 @@
+
+     body{
+      background: url(https://www.avianca.com/content/dam/avianca_new/destinos/nva/co_nva_ciudad_2880_1620_03.png) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      }
+
+    
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+       
+      }
+      
+      li {
+        float: left;
+      }
+      
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 18px;
+        text-decoration: none;
+      
+        
+      }
+      #btn-comunas{
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 32px;
+        text-decoration: none;
+      }
+      
+      li a:hover:not(.active) {
+        background-color:whitesmoke;
+      }
+      
+      .active {
+        background-color: rgb(65, 219, 65);
+      }
+      li {
+          border-right: 1px solid #bbb;
+        }
+      .inicio{
+        width: 100%;
+        text-align: center;
+        padding-right:25%;
+      padding-left:25%;
+      }
+    #comuna{
+      
+      padding-right:1px;
+      padding-left:40px;
+      
+    }
+      
+      .card-body{
+        text-align: right;
+     
+      }
+      .titulo {
+        text-align: center;
+      }
+      p,h1{
+        text-align: center;
+      }
+      img{
+        width: 460px; height: 470px;
+        display:block;
+        margin:auto;
+        max-width:100%
+      
+       
+      }
+      #mapa{
+       
+        padding-right:35px;
+        padding-left:100px;
+        
+      }
+     h6{
+      text-align: center;
+     }
