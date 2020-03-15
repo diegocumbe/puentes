@@ -31,7 +31,7 @@
                     </thead>
                     <tbody>
                     <?php
-                    $query = "SELECT *FROM registro_de_puentes where tipo='PV1' OR  tipo='PV2'";
+                    /*$query = "SELECT *FROM registro_de_puentes where tipo='PV1' OR  tipo='PV2'";
                     $result_task = mysqli_query($conn,$query);
                     
                     while($row = mysqli_fetch_array($result_task)){?>
@@ -54,7 +54,25 @@
                     </tr>
                    
                     <?php
-                 }?>
+                 }?>*/
+                 $data = json_decode($response, true);
+                 foreach ( $data as $key => $value) {?>
+                 <tr>
+                 <td><?php echo $data[$key]["fecha_de_actualización"]?></td>
+                 <td><?php echo $data[$key]["designación"]?></td>
+                 <td><?php echo $data[$key]["dirección"]?></td>
+                 <td><?php echo $data[$key]["comuna"]?></td>
+                 <td>
+                     
+                         <a href="edit.php?id=<?php echo $data[$key]['id']?>" class="btn btn-secondary">
+                             <i class="fas fa-eye"> ver</i> 
+                         </a>
+                         </td>
+                 </tr>
+                
+                 <?php
+             }
+              ?>
                  
                     </tbody>
                 </table>
