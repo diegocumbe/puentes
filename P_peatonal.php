@@ -1,4 +1,4 @@
-<?php include("db.php") ?>
+<?php include("firebase.php")?>
 <?php include("includes/header.php")?>
 <div class="container col-8">
     
