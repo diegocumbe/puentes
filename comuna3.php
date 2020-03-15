@@ -17,16 +17,7 @@
                 
                 <table class="table table-bordered " >
                     <thead>
-                    <h1 >Puentes Por Comuna</h1>
-                        <tr class="thead-dark">
-                        <br>
-                        <th>Fecha</th>
-                            <th>Desig</th>
-                            <th>Dirección</th>
-                            <th>Comuna</th>
-                            <th></th>
-                         </tr>
-                    </thead>
+                    <?php include("tabla.php") ?>
                     <tbody>
                     <?php
                     $query = "SELECT *FROM registro_de_puentes where comuna='3' ";

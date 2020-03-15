@@ -12,22 +12,11 @@
                 <span aria-hidden="true">&times;</span>
                 </button>
                 </div>
-
+               
             <?php session_unset(); }?>
                 
                 <table class="table table-bordered " >
-                    <thead>
-                    <h1 >Puentes Por Comuna</h1>
-                        <tr class="thead-dark">
-                        <br>
-                            <th>Fecha</th>
-                            <th>Desigación</th>
-                            <th>Dirección</th>
-                            <th>Comuna</th>
-                            <th></th>
-                         </tr>
-                    </thead>
-                    <tbody>
+                <?php include("tabla.php") ?>
                     <?php
                     $query = "SELECT *FROM registro_de_puentes where comuna='10' ";
                     $result_task = mysqli_query($conn,$query);

@@ -1,0 +1,16 @@
+{
+    "name": "diego_cumbe/app",
+    "type": "project",
+    "license": "GNU3",
+    "authors": [
+        {
+            "name": "diego system",
+            "email": "u20162152648@usco.edu.co"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "kreait/firebase-php": "4.35",
+        "php": ">= 7.2.0"
+    }
+}
